@@ -1,0 +1,51 @@
+
+form.register__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.close{
+    /* display: block; */
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    transition: background .3s linear ;
+}
+.close:hover{
+    cursor: pointer;
+    background: lightgray;
+}
+.modal__head{
+    padding: .5rem 0 1rem 0;
+}
+.register__form input{
+    padding: .5rem 1rem;
+    border: 1px solid lightgray;
+    border-radius: 99px;
+    margin: .5rem 0 0 0;
+    width: 80%;
+}
+.register__form .error{
+    font-size: .8rem;
+    color: rgb(150, 0, 0);
+}
+.register__form button{
+    width: 50%;
+    margin-top: .5rem;
+    padding: .5rem;
+    text-align: center;
+    background: lightgray;
+    border-radius: 99px;
+    border: none;
+}
+.register__form button:hover{
+    cursor: pointer;
+
+}
+
+input:focus,
+button:focus{
+    outline: none;
+}

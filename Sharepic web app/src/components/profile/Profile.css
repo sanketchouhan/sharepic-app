@@ -1,0 +1,71 @@
+.profile__container{
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.profile__close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.profile__container .username{
+    padding: .5rem 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.profile__container .email{
+    padding:0 0 1rem 1rem;
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+}
+
+.profile__container .gallery{
+    background: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.profile__container .gallery h5{
+    margin: 0;
+    padding: .5rem;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.profile__container .gallery h5>span{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile__container .photos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.profile__container .photos .photo{
+    /* height:calc(25rem > 100vw? 100vw / 3 : 25rem/3) */
+    height: calc(25rem / 3);
+    max-height: calc(100vw / 3);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.profile__container .photos img{
+    width: 100%;
+    /* object-fit: contain; */
+    display: block;
+}
+
+.profile__container .loading_photos,
+.profile__container .no__photos{
+    position: absolute;
+    bottom: -25vh;
+    left: 50%;
+    transform: translateX(-50%);
+}

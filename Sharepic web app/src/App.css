@@ -1,0 +1,65 @@
+
+.app{
+    background: #ececec;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+input,
+button{
+    font-size: 1rem;
+}
+header{
+    border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: white;
+}
+.header__contents{
+    width: 100%;
+    max-width: 50rem;
+    padding: .3rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__contents > img{
+    height: 3rem;
+}
+
+.header__contents > .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .login__register,
+header .login,
+header .register{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header .login,
+header .register{
+    transition: background .3s linear;
+    height: 100%;
+    padding: 0 .5rem;
+    border-radius: 15px;
+}
+header .login:hover,
+header .register:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+
+.header__username{
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+
+
+@media screen and (min-width: 400px){
+    
+}
